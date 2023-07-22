@@ -1,0 +1,323 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0px 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 25px;
+}
+
+nav ul li:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.brand img {
+
+    color: green;
+    background-color: white;
+    width: 50px;
+    border-radius: 5vw;
+}
+
+
+.container {
+    min-height: 72vw;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    width: 75vw;
+    border-radius: 20px;
+    margin: 23px auto;
+    padding: 34px;
+    background-image: url('https://i.pinimg.com/originals/b5/d2/23/b5d223e704cafcdce826aa00aa584bf6.jpg');
+    background-size: 150vw;
+
+}
+
+.songlist h1 {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 50px;
+}
+
+
+
+.bottom {
+    position: sticky;
+    height: 150px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+
+.icons {
+    margin-top: 4vw;
+}
+
+.icons i {
+    cursor: pointer;
+    color: blueviolet;
+
+}
+
+.my-icon {
+    font-size: 4vw;
+    color: blueviolet;
+}
+
+#myprogressbar {
+    width: 80vw;
+    cursor: pointer;
+    height: 10%;
+    margin-bottom: 9vw;
+    position: absolute;
+}
+
+.songitem {
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+    margin: 1vw 0vw;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5vw;
+    font-size: 2.5vw;
+}
+
+.songlist {
+    margin-bottom: 3vw;
+}
+
+.songlist h1 {
+    color: orange;
+}
+
+.songitem img {
+    height: 6vw;
+    width: 6vw;
+    margin: 0px 2vw;
+    border-radius: 5vw;
+}
+
+.allsong {
+    margin-top: 20px;
+}
+
+.songlistplay img {
+    height: 200px;
+    width: 20px;
+
+}
+
+.songinfo {
+    position: absolute;
+    left: 5vW;
+    top: 3vW;
+
+
+}
+
+.songinfo img {
+    width: 10vw;
+    height: 5vw;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    margin-top: 1.5vw;
+    border-radius: 2vw;
+
+}
+
+.timestamp {
+    margin: 0px 23px;
+    color: blueviolet;
+
+}
+
+.timestamp i {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.timestamp img {
+
+    cursor: pointer;
+
+}
+
+.songName {
+    color: blueviolet;}
+
+#mastersongname {
+    color: blueviolet;
+    position: relative;
+    bottom: -2vh;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 1100px){
+    .songlist h1 {
+        font-size: 30px;
+    }
+    .container{
+        width: 55vw;
+    }
+    nav ul li {
+    padding: 0px 36px;
+    font-size: 26px;
+}
+#mastersongname{
+    font-size: 22px;
+    /* position: relative;
+    bottom: -5vh; */
+}
+}
+@media screen and (max-width: 700px){
+    .songlist h1 {
+        font-size: 20px;
+    }
+    .songitem{
+        width: 110%;
+        font-size: 17px;
+        height: 8vh;
+        
+    }
+    .container{
+        margin: 10px auto;
+        width: 80%;
+    }
+    
+nav ul li {
+    padding: 0px 25px;
+    font-size: 21px;
+}
+.brand {
+    font-size: 18px;
+}
+
+.brand img {
+    width: 35px;
+    border-radius: 5vw;
+}
+.bottom {
+    height: 80px;
+    width: 100vw;
+}
+#myprogressbar {
+    width: 90vw;
+    cursor: pointer;
+    height: 10%;
+    margin-bottom :6vw;}
+
+}
+.songitem img{
+    width: 6vw;
+    height: 6vw;
+
+}
+#mastersongname{
+    font-size: 24px;
+    /* position: relative;
+    bottom: 2vw; */
+}
+.my-icon{
+    position: relative;
+    left: 34vw;
+    font-size: 5vw;
+}
+@media screen and (max-width: 500px){
+    nav ul li{
+        padding: 0px 15px;
+        font-size: 15px;
+    }
+    nav{
+        width: 100vw;
+    }
+    .container{
+        width: 80vw;
+    }
+    .songitem img{
+        width: 8vw;
+        height: 8vw;
+
+    }
+    .songitem{
+        height: 35px;
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    #myprogressbar{
+        height:4px
+    }
+    #mastersongname{
+        font-size: 18px;
+        /* position: relative;
+        bottom:-2vh ;  */
+    }
+    .songitem img{
+        margin: 0px 0px 0px 5px;
+    }
+    .songName{
+        position: relative;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .my-icon{
+        font-size: 5vw;
+    }
+    .timestamp{
+        position: relative;
+        margin-left: 2px;
+    }
+}
+@media screen and (max-width: 400px){
+nav ul li {
+font-size: 11px;
+padding: 0px 11px
+}
+.songitem{
+    height: 35px;
+    width: 80vw;
+    font-size: 16px;
+}
+}
