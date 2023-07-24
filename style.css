@@ -210,6 +210,9 @@ nav ul li:hover {
     /* position: relative;
     bottom: -5vh; */
 }
+.songinfo img {
+    margin-top: 8vw;
+}
 }
 @media screen and (max-width: 700px){
     .songlist h1 {
@@ -239,7 +242,7 @@ nav ul li {
     border-radius: 5vw;
 }
 .bottom {
-    height: 80px;
+    height: 130px;
     width: 100vw;
 }
 #myprogressbar {
@@ -264,6 +267,17 @@ nav ul li {
     left: 34vw;
     font-size: 5vw;
 }
+.songinfo img {
+    margin-top: 5vw;
+    width: 100px;
+    height: 45px;
+}
+@media screen and (max-width: 650px){
+.songinfo img {
+    width: 80px;
+    height: 40px;
+    margin-top: 50px;
+}
 @media screen and (max-width: 500px){
     nav ul li{
         padding: 0px 15px;
@@ -274,6 +288,7 @@ nav ul li {
     }
     .container{
         width: 80vw;
+        margin: 2px;
     }
     .songitem img{
         width: 8vw;
@@ -282,10 +297,13 @@ nav ul li {
     }
     .songitem{
         height: 35px;
-        width: 90vw;
+        width: 85vw;
         font-size: 16px;
+       
     }
-
+.allsong{
+    margin-left: -12px;
+}
     #myprogressbar{
         height:4px
     }
@@ -309,6 +327,15 @@ nav ul li {
         position: relative;
         margin-left: 2px;
     }
+    .songinfo img{
+        width: 64px;
+        height: 35px;
+        margin-top: 59px;
+    }
+.bottom{
+    height: 130px;
+}
+}
 }
 @media screen and (max-width: 400px){
 nav ul li {
@@ -317,7 +344,7 @@ padding: 0px 11px
 }
 .songitem{
     height: 35px;
-    width: 90vw;
+    width: 85vw;
     font-size: 16px;
 }
 }
